@@ -21,3 +21,27 @@ document.getElementById("result").innerText = "Wrong answer. Try again."
 }
 
 }
+let streak = localStorage.getItem("streak") || 0
+
+document.getElementById("streak").innerText = "Current streak: " + streak
+
+function checkAnswer(){
+
+let userAnswer = document.getElementById("answer").value
+
+if(userAnswer == puzzle.answer){
+
+streak++
+
+localStorage.setItem("streak", streak)
+
+document.getElementById("result").innerText = "Correct! Puzzle solved."
+document.getElementById("streak").innerText = "Current streak: " + streak
+
+}else{
+
+document.getElementById("result").innerText = "Wrong answer. Try again."
+
+}
+
+}
