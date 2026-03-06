@@ -1,15 +1,49 @@
 body{
-font-family: Arial;
+
+font-family:Arial;
 text-align:center;
-margin-top:100px;
+margin-top:80px;
+background:#f5f5f5;
+
 }
 
 input{
+
 padding:10px;
+font-size:16px;
 margin:10px;
+
 }
 
 button{
+
 padding:10px 20px;
+font-size:16px;
 cursor:pointer;
+
+}
+
+#heatmap{
+
+display:grid;
+grid-template-columns:repeat(7,25px);
+gap:6px;
+justify-content:center;
+margin-top:20px;
+
+}
+
+.day{
+
+width:25px;
+height:25px;
+background:#ddd;
+border-radius:4px;
+
+}
+
+.solved{
+
+background:#2ecc71;
+
 }
