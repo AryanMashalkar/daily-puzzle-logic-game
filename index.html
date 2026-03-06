@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Daily Puzzle Game</title>
+<title>Daily Puzzle Logic Game</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -9,16 +10,22 @@
 
 <h1>Daily Puzzle Logic Game</h1>
 
-<p>Solve today's puzzle:</p>
+<h3 id="question"></h3>
 
 <input id="answer" placeholder="Enter answer">
 
 <button onclick="checkAnswer()">Submit</button>
 
 <p id="result"></p>
+
 <p id="streak"></p>
+
+<h3>Activity Heatmap</h3>
+
+<div id="heatmap"></div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
